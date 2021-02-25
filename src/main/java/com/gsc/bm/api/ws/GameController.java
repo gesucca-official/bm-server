@@ -37,7 +37,7 @@ public class GameController {
     }
 
     @MessageMapping("/game/{gameId}/{playerId}/view")
-    @SendToUser("/queue/game/{gameId}/{playerId}/view")
+    @SendToUser("/game/{gameId}/view")
     public ClientGameView getGameView(@DestinationVariable String gameId, @DestinationVariable String playerId) {
         return viewExtractorService.extractViewFor(gameSessionService.getGame(gameId), playerId);
     }
@@ -48,7 +48,7 @@ public class GameController {
     }
 
     @MessageExceptionHandler
-    @SendToUser(value = "/queue/player/action/illegalMove")
+    @SendToUser(value = "/illegalMove")
     public String handleException(IllegalMoveException exception) {
         return exception.getWhatHeDid();
     }

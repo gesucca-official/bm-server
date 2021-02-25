@@ -20,7 +20,7 @@ public class OpenGameQueuesController {
     }
 
     @MessageMapping("/game/open/1vCom/join/{username}/{deckId}")
-    @SendToUser("/queue/game/open/1vCom/ready")
+    @SendToUser("/game/open/1vCom/ready")
     public String queueForOpen1vCom(@DestinationVariable String username, @DestinationVariable String deckId) {
         return gameSessionService.newGame(
                 gameFactoryService.craftOpen1vComGame(username, deckId));

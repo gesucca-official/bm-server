@@ -33,7 +33,7 @@ public class QuickGameQueuesController {
 
 
     @MessageMapping("/game/quick/1vCom/join")
-    @SendToUser("/queue/game/quick/1vCom/ready")
+    @SendToUser("/game/quick/1vCom/ready")
     public String queueForQuick1vCom(String playerId) {
         return gameSessionService.newGame(
                 gameFactoryService.craftQuick1vComGame(playerId));

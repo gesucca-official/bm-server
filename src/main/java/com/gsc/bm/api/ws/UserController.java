@@ -21,20 +21,20 @@ public class UserController {
     }
 
     @MessageMapping("/user/{username}/account")
-    @SendToUser("/queue/user/{username}/account")
+    @SendToUser("/account/data")
     public UserAccountInfo getUserAccountInfo(@DestinationVariable String username) {
         return service.loadUserAccountInfo(username);
     }
 
     @MessageMapping("/user/{username}/deck")
-    @SendToUser("/queue/user/{username}/account")
+    @SendToUser("/account/data")
     public UserAccountInfo addUserDeck(@DestinationVariable String username, @Payload UserGuiDeck deck) {
         service.addUserDeck(username, deck);
         return service.loadUserAccountInfo(username);
     }
 
     @MessageMapping("/user/{username}/deck/delete")
-    @SendToUser("/queue/user/{username}/account")
+    @SendToUser("/account/data")
     public UserAccountInfo deleteUserDeck(@DestinationVariable String username, @Payload UserGuiDeck deck) {
         service.deleteUserDeck(username, deck);
         return service.loadUserAccountInfo(username);
