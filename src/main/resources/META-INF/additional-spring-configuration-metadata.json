@@ -1,0 +1,49 @@
+{
+  "properties": [
+    {
+      "name": "http-auth.username",
+      "type": "java.lang.String",
+      "description": "HTTP Basic Auth Username."
+    },
+    {
+      "name": "http-auth.password",
+      "type": "java.lang.String",
+      "description": "HTTP Basic Auth Password."
+    },
+    {
+      "name": "log.db",
+      "type": "java.lang.String",
+      "description": "Save logs to DB (Y or N)."
+    },
+    {
+      "name": "spring.datasource.external.url",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.external.url."
+    },
+    {
+      "name": "spring.datasource.external.username",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.external.username."
+    },
+    {
+      "name": "spring.datasource.external.password",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.external.password."
+    },
+    {
+      "name": "spring.datasource.external.driver-class-name",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.external.driver-class-name."
+    },
+    {
+      "name": "spring.datasource.internal.url",
+      "type": "java.lang.String",
+      "description": "Description for spring.spring.datasource.internal.url."
+    },
+    {
+      "name": "spring.datasource.internal.driver-class-name",
+      "type": "java.lang.String",
+      "description": "Description for spring.spring.datasource.internal.driver-class-name."
+    }
+  ]
+}

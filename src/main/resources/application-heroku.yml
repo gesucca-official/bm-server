@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    external:
+      url: ${JDBC_DATABASE_URL}
+      username: ${JDBC_DATABASE_USERNAME}
+      password: ${JDBC_DATABASE_PASSWORD}
+      driver-class-name: org.postgresql.Driver
+  mail:
+    host: ${MAIL_HOST}
+    port: ${MAIL_PORT}
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+http-auth:
+  username: ${HTTP_AUTH_USERNAME}
+  password: ${HTTP_AUTH_PASSWORD}
+log:
+  db: N

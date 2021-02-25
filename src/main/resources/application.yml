@@ -1,0 +1,21 @@
+server:
+  servlet:
+    context-path: /api
+spring:
+  datasource:
+    internal:
+      url: jdbc:sqlite::resource:cards.sqlite
+      driver-class-name: org.sqlite.JDBC
+  mail:
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            trust: smtp.gmail.com
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
