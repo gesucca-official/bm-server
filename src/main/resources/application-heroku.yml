@@ -13,5 +13,7 @@ spring:
 http-auth:
   username: ${HTTP_AUTH_USERNAME}
   password: ${HTTP_AUTH_PASSWORD}
+stomp:
+  allowedOrigin: https://botte-micidiali.herokuapp.com/
 log:
   db: N

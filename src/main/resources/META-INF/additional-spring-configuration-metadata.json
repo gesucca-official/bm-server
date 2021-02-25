@@ -44,6 +44,11 @@
       "name": "spring.datasource.internal.driver-class-name",
       "type": "java.lang.String",
       "description": "Description for spring.spring.datasource.internal.driver-class-name."
+    },
+    {
+      "name": "stomp.allowedOrigin",
+      "type": "java.lang.String",
+      "description": "Allowed origin in WebSocket config (accept requests only from this domain)."
     }
   ]
 }
