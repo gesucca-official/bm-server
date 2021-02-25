@@ -11,7 +11,7 @@ import java.util.Map;
 
 @RestController
 @CrossOrigin
-@RequestMapping("rest/v1//sign-up")
+@RequestMapping("rest/v1/sign-up")
 public class UserSignUpController {
 
     private final AuthService authService;
