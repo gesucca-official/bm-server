@@ -16,4 +16,4 @@ http-auth:
 stomp:
   allowedOrigin: https://botte-micidiali.herokuapp.com
 log:
-  db: N
+  db: Y
